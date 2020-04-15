@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Globalmantics_Sqs_WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Globalmantics_Sqs_WebApi.Controllers.QueueController.SendMessage(Globalmantics_Sqs_WebApi.Models.TicketRequest)">
+             <summary>
+             Add a new message to SQS
+             </summary>
+             <param name="ticketRequest">
+             parameters to be added
+             </param>
+             <returns>
+             Message Id of newly added message
+             </returns>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Queue/SendMessage
+                 {
+                    "id": "5e31ca06-72d4-445d-8886-314e7b1cbeb8",
+                    "name": "Jack Sparrow",
+                    "emailAddress": "jack@sp.com",
+                 }
+            
+             </remarks>
+             <response code="200">added message with unique id</response>
+             <response code="500">general error due to api failure or aws connection failure</response>
+        </member>
+        <member name="P:Globalmantics_Sqs_WebApi.Models.TicketRequest.Id">
+            <summary>
+            New Guid for each ticket
+            </summary>
+        </member>
+        <member name="P:Globalmantics_Sqs_WebApi.Models.TicketResponse.MessageId">
+            <summary>
+            Message id of a created message
+            </summary>
+        </member>
+    </members>
+</doc>
