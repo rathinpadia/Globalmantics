@@ -6,4 +6,4 @@ Interact with Amazon Web Services (AWS) SQS with ASP.NET Core and the AWS SDK fo
 3. A .Net core lambda function to read message from SQS once a message is received in SQS.
 # Set a Queue URL in Service
 # Configure Profile for AWS Credentials using aws cli : aws configure
-# Configure aws region on appsettings.
+# Configure aws region in appsettings.
